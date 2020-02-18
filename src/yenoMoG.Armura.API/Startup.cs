@@ -1,3 +1,5 @@
+using System;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +21,8 @@ namespace yenoMoG.Armura.API
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllers();
+			var assembly = AppDomain.CurrentDomain.Load("yenoMoG.Armura.Api");
+			services.AddMediatR(assembly);
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

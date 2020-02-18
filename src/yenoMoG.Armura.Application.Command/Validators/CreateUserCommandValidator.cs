@@ -14,8 +14,8 @@ namespace yenoMoG.Armura.Domain.Validators
 			RuleFor(u => u.Email).NotEmpty().Matches(@"/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/").WithMessage("Precisa conter email válido");
 			RuleFor(u => u.Password.Length).GreaterThanOrEqualTo(8).LessThanOrEqualTo(16).WithMessage("Senha precisa ser maior que 8 e menor que 16");
 			RuleFor(u => u.Password).NotEmpty().Matches(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})").WithMessage("Senha precisa ser válida");
-			RuleFor(u => u.BirthDate).NotEmpty().WithMessage("Aniversário não pode ser vázio");
-			RuleFor(u => u.Gender).NotEmpty().WithMessage("Gênero não pode ser vázio");
+			RuleFor(u => u.BirthDate).NotEmpty().WithMessage("Aniversário não pode ser vazio");
+			RuleFor(u => u.Gender).NotEmpty().WithMessage("Gênero não pode ser vazio");
 		}
 	}
 }
