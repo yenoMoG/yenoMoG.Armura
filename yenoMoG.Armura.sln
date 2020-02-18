@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yenoMoG.Armura.API", "yenoMoG.Armura.API\yenoMoG.Armura.API.csproj", "{2124F11E-5312-447C-A41B-7B70F4681A4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yenoMoG.Armura.API", "src\yenoMoG.Armura.API\yenoMoG.Armura.API.csproj", "{2124F11E-5312-447C-A41B-7B70F4681A4B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yenoMoG.Armura.Application.Command", "yenoMoG.Armura.Application.Command\yenoMoG.Armura.Application.Command.csproj", "{2217EE67-3293-423F-8E7E-6E9424AD28E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yenoMoG.Armura.Application.Command", "src\yenoMoG.Armura.Application.Command\yenoMoG.Armura.Application.Command.csproj", "{2217EE67-3293-423F-8E7E-6E9424AD28E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yenoMoG.Armura.Domain", "yenoMoG.Armura.Domain\yenoMoG.Armura.Domain.csproj", "{582E02D3-CA40-4B5D-9CFB-7DC45EC3FDCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yenoMoG.Armura.Domain", "src\yenoMoG.Armura.Domain\yenoMoG.Armura.Domain.csproj", "{582E02D3-CA40-4B5D-9CFB-7DC45EC3FDCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
