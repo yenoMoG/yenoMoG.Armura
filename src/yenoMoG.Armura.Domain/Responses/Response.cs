@@ -23,6 +23,15 @@ namespace yenoMoG.Armura.Domain.Responses
 			response.Messages.Add(key, message);
 			return response;
 		}
+		public static Response<TValue> Fail(IDictionary<string, string> fails)
+		{
+			var response = new Response<TValue>(default);
+			foreach (var (key ,  value) in fails)
+			{
+				response.Messages.Add(key, value);
+			}
+			return response;
+		}
 	}
 
 	public class Response

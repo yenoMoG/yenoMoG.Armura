@@ -7,7 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yenoMoG.Armura.API", "src\y
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yenoMoG.Armura.Application.Command", "src\yenoMoG.Armura.Application.Command\yenoMoG.Armura.Application.Command.csproj", "{2217EE67-3293-423F-8E7E-6E9424AD28E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yenoMoG.Armura.Domain", "src\yenoMoG.Armura.Domain\yenoMoG.Armura.Domain.csproj", "{582E02D3-CA40-4B5D-9CFB-7DC45EC3FDCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "yenoMoG.Armura.Domain", "src\yenoMoG.Armura.Domain\yenoMoG.Armura.Domain.csproj", "{582E02D3-CA40-4B5D-9CFB-7DC45EC3FDCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{04DD89E9-E207-477B-9D56-2453A6F85E2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1FC6B69B-2440-4C01-99F6-FDB31FCB0751}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yenoMoG.Armura.Test", "test\yenoMoG.Armura.Test\yenoMoG.Armura.Test.csproj", "{50E26CF2-319C-43B4-A142-889998BFC870}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +33,19 @@ Global
 		{582E02D3-CA40-4B5D-9CFB-7DC45EC3FDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{582E02D3-CA40-4B5D-9CFB-7DC45EC3FDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{582E02D3-CA40-4B5D-9CFB-7DC45EC3FDCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50E26CF2-319C-43B4-A142-889998BFC870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E26CF2-319C-43B4-A142-889998BFC870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E26CF2-319C-43B4-A142-889998BFC870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E26CF2-319C-43B4-A142-889998BFC870}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2124F11E-5312-447C-A41B-7B70F4681A4B} = {04DD89E9-E207-477B-9D56-2453A6F85E2C}
+		{2217EE67-3293-423F-8E7E-6E9424AD28E6} = {04DD89E9-E207-477B-9D56-2453A6F85E2C}
+		{582E02D3-CA40-4B5D-9CFB-7DC45EC3FDCA} = {04DD89E9-E207-477B-9D56-2453A6F85E2C}
+		{50E26CF2-319C-43B4-A142-889998BFC870} = {1FC6B69B-2440-4C01-99F6-FDB31FCB0751}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3ECCFA22-D3D3-4404-9EF3-2E8252DF71C1}

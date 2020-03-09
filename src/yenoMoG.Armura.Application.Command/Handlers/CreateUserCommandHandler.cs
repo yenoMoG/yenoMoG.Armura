@@ -2,42 +2,24 @@
 using System.Threading.Tasks;
 using MediatR;
 using yenoMoG.Armura.Application.Command.Commands;
+using yenoMoG.Armura.Domain.Models;
 using yenoMoG.Armura.Domain.Responses;
-using yenoMoG.Armura.Domain.Validators;
 
 namespace yenoMoG.Armura.Application.Command.Handlers
 {
 	public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Response>
 	{
 
-		private readonly CreateUserCommandValidator _validator;
-
-		public CreateUserCommandHandler
-			(
-			)
-		{
-			_validator = new CreateUserCommandValidator();
-		}
-
 		public async Task<Response> Handle(CreateUserCommand request, CancellationToken cancellationToken)
 		{
-			var validation = ValidateCommand(request);
+			var user = User.Create(request.CPF, request.Name, request.Nickname, request.Email, request.Password, request.BirthDate, request.Gender);
 
-			if (validation.IsFailure)
+			if (user.IsFailure)
 			{
 				return Response.Fail("", "");
 			}
 
 			return Response.Ok();
-		}
-
-		private Response ValidateCommand(CreateUserCommand request)
-		{
-			var validationResponse = _validator.Validate(request);
-
-			if (validationResponse.IsValid)
-				return Response.Ok();
-			return Response.Fail("","Dados inválidos");
 		}
 	}
 }
