@@ -8,7 +8,7 @@ namespace yenoMoG.Armura.Application.Command.Commands
 	{
 		public CreateUserCommand
 			(
-				string cPF, 
+				string cpf, 
 				string name, 
 				string nickname, 
 				string email, 
@@ -17,7 +17,7 @@ namespace yenoMoG.Armura.Application.Command.Commands
 				char gender
 			)
 		{
-			CPF = cPF;
+			CPF = cpf;
 			Name = name;
 			Nickname = nickname;
 			Email = email;
